@@ -112,8 +112,32 @@ li{
 } 
 .content .hand{
     cursor: pointer;
+}
+/* .content .hand{
+    cursor: pointer;
     transition: all 0.25s;
 }
 .content .hand:hover{
     transform: translate3d(0px, -8px, 0px);
+} */
+.contest{
+    width: 900px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.contest > div{
+    flex: 1;
+}
+.play-again button{
+    padding: 10px 34px;
+    cursor: pointer;
+    border:1px solid white;
+    border-radius: 10px;
+}
+.content h1{
+    /* color: white; */
 }
