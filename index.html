@@ -27,19 +27,27 @@
                 </button>
             </div>
         </div>
-        <div class="body">
+        <div class="content">
             <div class="top-options">
-                <img src="assets/stone_bg.png" alt="" class="hand stones" id="stone_bg">
-                <img src="assets/stone.png" alt="" class="hand stones" id="stone">
-                <img src="assets/Line 1.png" alt="">
-                <img src="assets/scissor_bg.png" alt="" class="hand scissors" id="scissor_bg">
-                <img src="assets/scissor.png" alt="" class="hand scissors" id="scissor">
+                <div id="stone">
+                    <img src="assets/stone_bg.png" alt="" class="hand stones" id="stone_bg" onclick="pickUser('stone')">
+                    <img src="assets/stone.png" alt="" class="hand stones" id="stone_icon" onclick="pickUser('stone')">
+                </div>
+                <!-- <div id="line1">
+                    <img src="assets/Line 1.png" alt="">
+                </div> -->
+                <div id="scissor">
+                    <img src="assets/scissor_bg.png" alt="" class="hand scissors" id="scissor_bg" onclick="pickUser('scissor')">
+                    <img src="assets/scissor.png" alt="" class="hand scissors" id="scissor_icon" onclick="pickUser('scissor')">
+                </div>    
             </div>
             <div class="bottom-option">
-                <img src="assets/Line 3.png" alt="">
-                <img src="assets/hand_bg.png" alt="" class="hand papers" id="paper_bg">
-                <img src="assets/hand.png" alt="" class="hand papers" id="paper">
-                <img src="assets/Line 2.png" alt="">
+                    <!-- <img src="assets/Line 3.png" alt="" id="line3"> -->
+                <div id="paper">
+                    <img src="assets/hand_bg.png" alt="" class="hand papers" id="paper_bg" onclick="pickUser('paper')">
+                    <img src="assets/hand.png" alt="" class="hand papers" id="paper_icon" onclick="pickUser('paper')">
+                </div>
+                <!-- <img src="assets/Line 2.png" alt="" id="line2"> -->
             </div>
         </div>
     </div>

@@ -44,61 +44,54 @@ li{
     font-size: 20px;
     border-radius: 10px;
 }
-.body{
-    margin-top: 80px;
+.content .top-options{
     display: flex;
+}
+.content .bottom-option{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content{
+    height: 430px;
+    width: 476px;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("/assets/triangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.bottom-option{
-    margin-top: 40px;
+.top-options #stone{
+    margin-right: 20px;
 }
-.top-options img:nth-child(1){
+.top-options #scissor{
+    margin-left: 20px;
+}
+#stone #stone_bg{
     position: relative;
-    left:1vw;
 }
-.top-options img:nth-child(2){
+#stone #stone_icon{
     position: absolute;
-    left:39vw;
-    top:50vh;
-    z-index: 1;
+    margin-top: 50px;
+    margin-left: -120px;
 }
-.top-options img:nth-child(3){
-    bottom:10vh;
-    position:relative;
-}
-.top-options img:nth-child(4){
+#scissor #scissor_bg{
     position: relative;
-    right: 1vw;
 }
-.top-options img:nth-child(5){
+#scissor #scissor_icon{
     position: absolute;
-    z-index:1;
-    top:50vh;
-    right:39vw;
+    margin-top: 50px;
+    margin-left: -100px;
 }
-.bottom-option img:nth-child(1){
-    position: fixed;
-    left: 43vw;
-    bottom: 23vh;
-    z-index: -1;
+#paper #paper_bg{
+    position: relative;
 }
-.bottom-option img:nth-child(2){
+#paper #paper_icon{
     position: absolute;
-    bottom: 7vh;
-    left:45vw;
-}
-.bottom-option img:nth-child(3){
-    position: relative;
-    left: 3vw;
-    bottom: 1vh;
-}
-.bottom-option img:nth-child(4){
-    position: relative;
-    bottom: 10vh;
-    left: 3vw;
-    z-index: -1;
+    margin-top: 46px;
+    margin-left: -116px;
 }
 .rules{
     display: flex;
@@ -116,11 +109,11 @@ li{
     border:1px solid white;
     border-radius:10px ;
     justify-content: right;
-}
-.body .hand{
+} 
+.content .hand{
     cursor: pointer;
     transition: all 0.25s;
 }
-.body .hand:hover{
+.content .hand:hover{
     transform: translate3d(0px, -8px, 0px);
 }
