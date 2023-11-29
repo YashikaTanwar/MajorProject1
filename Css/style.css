@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+body{
+    background-color:rgb(140, 196, 97);
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+li{
+    list-style: none;
+    height: 37px;
+    width: 135px;
+    font-size: 40px;
+}
+.head{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 60px;
+    outline: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 800px;
+}
+.score{
+    box-sizing: border-box;
+}
+.score button{
+    background-color: white;
+    width: 139px;
+    padding: 10px;
+    height: 128px;
+    justify-content: right;
+    outline:none;
+    margin-left: 30px;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.body{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-option{
+    margin-top: 40px;
+}
+.top-options img:nth-child(1){
+    position: relative;
+    left:1vw;
+}
+.top-options img:nth-child(2){
+    position: absolute;
+    left:39vw;
+    top:50vh;
+    z-index: 1;
+}
+.top-options img:nth-child(3){
+    bottom:10vh;
+    position:relative;
+}
+.top-options img:nth-child(4){
+    position: relative;
+    right: 1vw;
+}
+.top-options img:nth-child(5){
+    position: absolute;
+    z-index:1;
+    top:50vh;
+    right:39vw;
+}
+.bottom-option img:nth-child(1){
+    position: fixed;
+    left: 43vw;
+    bottom: 23vh;
+    z-index: -1;
+}
+.bottom-option img:nth-child(2){
+    position: absolute;
+    bottom: 7vh;
+    left:45vw;
+}
+.bottom-option img:nth-child(3){
+    position: relative;
+    left: 3vw;
+    bottom: 1vh;
+}
+.bottom-option img:nth-child(4){
+    position: relative;
+    bottom: 10vh;
+    left: 3vw;
+    z-index: -1;
+}
+.rules{
+    display: flex;
+    justify-content: right;
+    padding: 0px 30px;
+}
+.rules button{
+    background-color:rgb(140, 196, 97);
+    color: white;
+    outline:white;
+    width:6vw;
+    height:6vh;
+    padding: 4px;
+    font-size: 20px;
+    border:1px solid white;
+    border-radius:10px ;
+    justify-content: right;
+}
+.body .hand{
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.body .hand:hover{
+    transform: translate3d(0px, -8px, 0px);
+}
