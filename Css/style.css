@@ -51,7 +51,7 @@ li{
     flex-wrap: wrap;
 }
 .content{
-    height: 430px;
+    height: 400px;
     width: 476px;
     display: flex;
     flex-wrap: wrap;
@@ -121,8 +121,8 @@ li{
 } */
 .contest{
     width: 900px;
-    height: 400px;
-    display: flex;
+    height: 300px;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -137,6 +137,10 @@ li{
     border:1px solid white;
     border-radius: 10px;
     margin-top: 20px;
+    transition: all 0.15s;
+}
+.play-again button:hover{
+    transform: translate3d(0px,-2px,0px);
 }
 .contest h1{
     color: white;
@@ -150,11 +154,32 @@ li{
     text-align: center;
     align-items: center;
 }
- .option-picked #option_user{
+ .option-picked{
     position: relative;
-    left:69px;
+    display: flex;
+    justify-content: center;
 }
-.option-picked #option_pc{
-    position: relative;
-    left:69px;
+.referee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.next{
+    display: none;
+    justify-content: right;
+    padding: 0px 30px;
+}
+.next button{
+    background-color:rgb(140, 196, 97);
+    color: white;
+    margin:0px 10px;
+    outline:white;
+    width:6vw;
+    height:6vh;
+    padding: 4px;
+    font-size: 20px;
+    border:1px solid white;
+    border-radius:10px ;
+    justify-content: right;
+} 
