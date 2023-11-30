@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: roboto;
 }
 body{
     background-color:rgb(140, 196, 97);
@@ -130,14 +129,32 @@ li{
     margin-top: 50px;
 }
 .contest > div{
-    flex: 1;
+    flex: 1; /*this means that all the div's have equal importance */
 }
 .play-again button{
     padding: 10px 34px;
     cursor: pointer;
     border:1px solid white;
     border-radius: 10px;
+    margin-top: 20px;
 }
-.content h1{
-    /* color: white; */
+.contest h1{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+}
+.contest h2,h3{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+ .option-picked #option_user{
+    position: relative;
+    left:69px;
+}
+.option-picked #option_pc{
+    position: relative;
+    left:69px;
 }
