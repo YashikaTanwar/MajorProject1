@@ -41,12 +41,12 @@ const referee=(userHand,pcHands)=>{
     if(userHand=="paper" && pcHands=="scissor")
     {
         Decision("YOU LOSE");
-        SetpcScore(PcScore + 1);
+        SetPCScore(PcScore + 1);
     }
     if(userHand=="paper" && pcHands=="rock")
     {
         Decision("YOU WIN");
-        SetUserScore(UserScore + 1);
+        SetUSERScore(UserScore + 1);
     }
     if(userHand=="paper" && pcHands=="paper")
     {
@@ -55,12 +55,12 @@ const referee=(userHand,pcHands)=>{
     if(userHand=="rock" && pcHands=="scissor")
     {
         Decision("YOU WIN");
-        SetUserScore(UserScore + 1);
+        SetUSERScore(UserScore + 1);
     }
     if(userHand=="rock" && pcHands=="paper")
     {
         Decision("YOU LOSE");
-        SetpcScore(PcScore + 1);
+        SetPCScore(PcScore + 1);
     }
     if(userHand=="rock" && pcHands=="rock")
     {
@@ -69,12 +69,12 @@ const referee=(userHand,pcHands)=>{
     if(userHand=="scissor" && pcHands=="paper")
     {
         Decision("YOU WIN");
-        SetUserScore(UserScore + 1);
+        SetUSERScore(UserScore + 1);
     }
     if(userHand=="scissor" && pcHands=="rock")
     {
         Decision("YOU LOSE");
-        SetpcScore(PcScore + 1);
+        SetPCScore(PcScore + 1);
     }
     if(userHand=="scissor" && pcHands=="scissor")
     {
@@ -87,11 +87,20 @@ const Decision=(decision)=>{
     document.querySelector("#rank").innerHTML=decision;
 }
 
-const SetUserScore=(score)=>{
-    // console.log(score);
-    document.querySelector("#your_score").innerHTML=score;
+const SetUSERScore=(userscore)=>{
+    UserScore=userscore;
+    document.querySelector("#your_score").innerHTML=userscore;
 }
 
-const SetpcScore=(score)=>{
-    document.querySelector("#computer_score").innerHTML=score;
+const SetPCScore=(pcscore)=>{
+    PcScore=pcscore;
+    document.querySelector("#computer_score").innerHTML=pcscore;
+}
+
+const restartGame=()=>{
+    let content=document.querySelector(".content");
+    content.style.display="flex";
+
+    let contest=document.querySelector(".contest");
+    contest.style.display="none";
 }
