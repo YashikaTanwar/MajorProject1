@@ -47,12 +47,12 @@ a{
     color: gray;
     font-weight: bold;
 }
-.rules{
+.rules1{
     display: flex;
     justify-content: right;
     padding: 0px 30px;
 }
-.rules button{
+.rules1 button{
     background-color:rgb(140, 196, 97);
     color: white;
     outline:white;
@@ -64,4 +64,22 @@ a{
     border-radius:10px ;
     justify-content: right;
     cursor: pointer;
+}
+.modal{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: grid;
+    place-items:end right;
+    pointer-events: none;
+    opacity: 0;
+}
+.show-modal{
+    opacity: 1;
+    pointer-events: initial;
+}
+.modal_container img{
+    margin-bottom: 6rem;
 }

@@ -30,8 +30,8 @@
         <div class="content">
             <div class="top-options">
                 <div id="stone">
-                    <img src="assets/stone_bg.png" alt="" class="hand stones" id="stone_bg" onclick="pickUser('stone')">
-                    <img src="assets/stone.png" alt="" class="hand stones" id="stone_icon" onclick="pickUser('stone')">
+                    <img src="assets/stone_bg.png" alt="" class="hand stones" id="stone_bg" onclick="pickUser('rock')">
+                    <img src="assets/stone.png" alt="" class="hand stones" id="stone_icon" onclick="pickUser('rock')">
                 </div>
                 <!-- <div id="line1">
                     <img src="assets/Line 1.png" alt="">
@@ -77,13 +77,18 @@
 
     <!-- by default -->
     <div class="rules">
-        <button>RULES</button>
+        <button id="rules-btn">RULES</button>
+    </div>
+    <div class="modal">
+        <div class="modal_container">
+            <img src="assets/rules.png" alt="rules">
+        </div>
     </div>
     
     <!-- when user wins then these options will be displayed -->
     <div class="next">
-        <button>RULES</button>
-        <button>NEXT</button>
+        <button id="rules">RULES</button>
+        <a href="hurray.html"><button id="next">NEXT</button></a>
     </div>
     <!-- JS file linking -->
     <script src="Js/script.js"></script>
